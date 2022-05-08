@@ -11,12 +11,14 @@ const router = require('./routes/router')
 
 
 //db
-mongoose.connect(process.env.MONGO_URL,{
+mongoose.connect(process.env.MONGO_URL
+    // {
     // useUnifiedTopology: true,
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useFindAndModify: false
- }).then(()=>{console.log("DB is connected")})
+    // useNewUrlParser: true,
+    // useCreateIndex: true,
+    // useFindAndModify: false
+//  }
+ ).then(()=>{console.log("DB is connected")})
 
 
 //upload
