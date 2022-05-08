@@ -20,6 +20,6 @@ var ResponseSchema = new mongoose.Schema({
  }, {timestamps: true});
 
 ResponseSchema.plugin(mongoosePaginate);
-Response = mongoose.model('Response', ResponseSchema ,'Response');
+let Response = mongoose.model('Response', ResponseSchema ,'Response');
 
 module.exports = Response; 

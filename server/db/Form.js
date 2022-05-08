@@ -3,11 +3,6 @@ const mongoosePaginate = require('mongoose-paginate-v2');
 
 var FormSchema = new mongoose.Schema({
 
-  createdBy: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'User'
-  },
-
   name: String,
 
   description: {
@@ -32,6 +27,6 @@ var FormSchema = new mongoose.Schema({
  }, {timestamps: true});
 
 FormSchema.plugin(mongoosePaginate);
-Form= mongoose.model('Form', FormSchema ,'Form');
+let Form = mongoose.model('Form', FormSchema ,'Form');
 
 module.exports = Form; 

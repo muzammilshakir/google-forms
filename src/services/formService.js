@@ -5,7 +5,8 @@ const API_URL = "http://localhost:5000/api/form/";
 export default {
     getForms(userId){
         return axios
-        .get(API_URL + "getuserforms/" +userId)
+        // .get(API_URL + "getuserforms/" +userId)
+        .get(API_URL + "forms/")
         .then(response =>{
             return response.data;
         })
