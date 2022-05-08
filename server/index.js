@@ -12,7 +12,7 @@ const router = require('./routes/router')
 
 //db
 mongoose.connect(process.env.MONGO_URL,{
-    useUnifiedTopology: true,
+    // useUnifiedTopology: true,
     useNewUrlParser: true,
     useCreateIndex: true,
     useFindAndModify: false
